@@ -24,6 +24,7 @@ var keysDown = {}
 
 window.addEventListener("keydown", function (event) {
     keysDown[event.keyCode] = true
+
 })
 
 window.addEventListener("keyup", function (event) {
@@ -79,3 +80,5 @@ var render = function () {
         battle.render()
     }
 }
+
+console.log(map)

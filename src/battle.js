@@ -24,7 +24,7 @@ function Battle(pokemon1, pokemon2) {
 
 Battle.prototype.render = function () {
     context.fillStyle = "#000000"
-    context.font = "20px Georgia"
+    context.font = "16px Georgia"
 
     this.pokemon1.renderBack(90, 110)
     this.pokemon2.renderFront(10, 20)
