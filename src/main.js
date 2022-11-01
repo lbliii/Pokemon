@@ -45,7 +45,7 @@ var stateBattle = "Battle"
 // Game loop
 var player = new Player(7, 12)
 var map = new Map(new Map1())
-var pokemon1 = new Pokemon(new Squirtle(7))
+var pokemon1 = new Pokemon(new Mew(7))
 var battle
 
 var step = function () {

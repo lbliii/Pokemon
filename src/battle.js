@@ -26,10 +26,15 @@ Battle.prototype.render = function () {
     context.fillStyle = "#000000"
     context.font = "16px Georgia"
 
-    this.pokemon1.renderBack(90, 110)
-    this.pokemon2.renderFront(10, 20)
-    this.pokemon1.renderStats(140, 150)
-    this.pokemon2.renderStats(10, 50)
+    // render them centered on the screen 
+    var x = canvas.width / 2
+    var y = canvas.height / 2
+
+    this.pokemon1.renderBack((x - 100), (y + 0))
+    this.pokemon1.renderStats((x - 300), (y + 0));
+
+    this.pokemon2.renderFront((x + 100), (y - 0))
+    this.pokemon2.renderStats((x + 300), (y - 0))
 
     context.rect(10, 210, 230, 80)
     context.stroke()
