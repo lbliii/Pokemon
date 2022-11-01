@@ -5,3 +5,4 @@ function Acid_Armor() {
     this.type = "Poison";
     this.priority = 0;
 }
+

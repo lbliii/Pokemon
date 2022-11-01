@@ -1,4 +1,4 @@
-function Zapados(level) {
+function Zapdos(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -14,14 +14,14 @@ function Zapados(level) {
     this.speed = 85
 
     this.img_front = new Image()
-    this.img_front.src = "images/pokemon/zapados-front.png"
+    this.img_front.src = "images/pokemon/zapdos-front.png"
     this.img_back = new Image()
-    this.img_back.src = "images/pokemon/zapados-back.png"
+    this.img_back.src = "images/pokemon/zapdos-back.png"
 
     this.setAttacks()
 }
 
-Zapados.prototype.setAttacks = function () {
+Zapdos.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Ice_Beam())
     }
