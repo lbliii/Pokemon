@@ -1,4 +1,4 @@
-function zapados(level) {
+function Zapados(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,17 +21,17 @@ function zapados(level) {
     this.setAttacks()
 }
 
-zapados.prototype.setAttacks = function () {
+Zapados.prototype.setAttacks = function () {
     if (1 <= this.level) {
-        this.attack1 = new Attack(new IceBeam())
+        this.attack1 = new Attack(new Ice_Beam())
     }
     if (4 <= this.level) {
-        this.attack2 = new Attack(new IceBeam())
+        this.attack2 = new Attack(new Ice_Beam())
     }
     if (7 <= this.level) {
-        this.attack3 = new Attack(new IceBeam())
+        this.attack3 = new Attack(new Ice_Beam())
     }
     if (10 <= this.level) {
-        this.attack4 = new Attack(new IceBeam())
+        this.attack4 = new Attack(new Ice_Beam())
     }
 }

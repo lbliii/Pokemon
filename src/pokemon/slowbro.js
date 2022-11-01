@@ -1,4 +1,4 @@
-function slowbro(level) {
+function Slowbro(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function slowbro(level) {
     this.setAttacks()
 }
 
-slowbro.prototype.setAttacks = function () {
+Slowbro.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Confusion())
     }

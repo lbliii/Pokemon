@@ -1,4 +1,4 @@
-function seadra(level) {
+function Seadra(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function seadra(level) {
     this.setAttacks()
 }
 
-seadra.prototype.setAttacks = function () {
+Seadra.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

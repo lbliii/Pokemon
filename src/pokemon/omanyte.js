@@ -1,4 +1,4 @@
-function omanyte(level) {
+function Omanyte(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function omanyte(level) {
     this.setAttacks()
 }
 
-omanyte.prototype.setAttacks = function () {
+Omanyte.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

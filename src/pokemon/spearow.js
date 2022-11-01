@@ -1,4 +1,4 @@
-function spearow(level){
+function Spearow(level){
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function spearow(level){
     this.setAttacks()
 }
 
-spearow.prototype.setAttacks = function(){
+Spearow.prototype.setAttacks = function(){
     if (1 <= this.level){
         this.attack1 = new Attack(new Peck())
     }

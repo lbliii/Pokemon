@@ -63,3 +63,6 @@ Pokemon.prototype.getAttack = function (attackNumber) {
     if (attackNumber == 3) return this.attack3
     if (attackNumber == 4) return this.attack4
 }
+
+
+

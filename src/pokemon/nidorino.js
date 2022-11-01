@@ -1,4 +1,4 @@
-function nidorino(level) {
+function Nidorino(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function nidorino(level) {
     this.setAttacks()
 }
 
-nidorino.prototype.setAttacks = function () {
+Nidorino.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

@@ -1,4 +1,4 @@
-function marowak(level) {
+function Marowak(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function marowak(level) {
     this.setAttacks()
 }
 
-marowak.prototype.setAttacks = function () {
+Marowak.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

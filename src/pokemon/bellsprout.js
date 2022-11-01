@@ -1,4 +1,4 @@
-function bellsprout(level) {
+function Bellsprout(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function bellsprout(level) {
     this.setAttacks()
 }
 
-bellsprout.prototype.setAttacks = function () {
+Bellsprout.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

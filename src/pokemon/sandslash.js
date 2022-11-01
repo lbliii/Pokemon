@@ -1,4 +1,4 @@
-function sandslash(level) {
+function Sandslash(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function sandslash(level) {
     this.setAttacks()
 }
 
-sandslash.prototype.setAttacks = function () {
+Sandslash.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

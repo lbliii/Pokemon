@@ -1,4 +1,4 @@
-function clefairy(level) {
+function Clefairy(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function clefairy(level) {
     this.setAttacks()
 }
 
-clefairy.prototype.setAttacks = function () {
+Clefairy.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Pound())
     }

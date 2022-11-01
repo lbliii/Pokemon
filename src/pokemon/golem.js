@@ -1,4 +1,4 @@
-function golem(level) {
+function Golem(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function golem(level) {
     this.setAttacks()
 }
 
-golem.prototype.setAttacks = function () {
+Golem.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

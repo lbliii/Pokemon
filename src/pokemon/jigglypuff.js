@@ -1,4 +1,4 @@
-function jigglypuff(level){
+function Jigglypuff(level){
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function jigglypuff(level){
     this.setAttacks()
 }
 
-jigglypuff.prototype.setAttacks = function () {
+Jigglypuff.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Pound())
     }

@@ -1,4 +1,4 @@
-function clefable(level) {
+function Clefable(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function clefable(level) {
     this.setAttacks()
 }
 
-clefable.prototype.setAttacks = function () {
+Clefable.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Pound())
     }

@@ -1,4 +1,4 @@
-function machop(level) {
+function Machop(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function machop(level) {
     this.setAttacks()
 }
 
-machop.prototype.setAttacks = function () {
+Machop.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

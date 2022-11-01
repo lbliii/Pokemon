@@ -1,4 +1,4 @@
-function primeape(level) {
+function Primeape(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function primeape(level) {
     this.setAttacks()
 }
 
-primeape.prototype.setAttacks = function () {
+Primeape.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

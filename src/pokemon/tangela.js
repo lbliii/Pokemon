@@ -1,4 +1,4 @@
-function tangela(level) {
+function Tangela(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,17 +21,17 @@ function tangela(level) {
     this.setAttacks()
 }
 
-tangela.prototype.setAttacks = function () {
+Tangela.prototype.setAttacks = function () {
     if (1 <= this.level) {
-        this.attack1 = new Attack(new VineWhip())
+        this.attack1 = new Attack(new Vine_Whip())
     }
     if (4 <= this.level) {
-        this.attack2 = new Attack(new VineWhip())
+        this.attack2 = new Attack(new Vine_Whip())
     }
     if (7 <= this.level) {
-        this.attack3 = new Attack(new VineWhip())
+        this.attack3 = new Attack(new Vine_Whip())
     }
     if (10 <= this.level) {
-        this.attack4 = new Attack(new VineWhip())
+        this.attack4 = new Attack(new Vine_Whip())
     }
 }

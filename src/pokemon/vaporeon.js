@@ -1,4 +1,4 @@
-function vaporeon(level) {
+function Vaporeon(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function vaporeon(level) {
     this.setAttacks()
 }
 
-vaporeon.prototype.setAttacks = function () {
+Vaporeon.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

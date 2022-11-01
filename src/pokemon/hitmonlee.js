@@ -1,4 +1,4 @@
-function hitmonlee(level) {
+function Hitmonlee(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,17 +21,17 @@ function hitmonlee(level) {
     this.setAttacks()
 }
 
-hitmonlee.prototype.setAttacks = function () {
+Hitmonlee.prototype.setAttacks = function () {
     if (1 <= this.level) {
-        this.attack1 = new Attack(new RollingKick())
+        this.attack1 = new Attack(new Rolling_Kick())
     }
     if (4 <= this.level) {
-        this.attack2 = new Attack(new RollingKick())
+        this.attack2 = new Attack(new Rolling_Kick())
     }
     if (7 <= this.level) {
-        this.attack3 = new Attack(new RollingKick())
+        this.attack3 = new Attack(new Rolling_Kick())
     }
     if (10 <= this.level) {
-        this.attack4 = new Attack(new RollingKick())
+        this.attack4 = new Attack(new Rolling_Kick())
     }
 }

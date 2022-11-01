@@ -1,4 +1,4 @@
-function poliwrath(level) {
+function Poliwrath(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function poliwrath(level) {
     this.setAttacks()
 }
 
-poliwrath.prototype.setAttacks = function () {
+Poliwrath.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

@@ -1,4 +1,4 @@
-function rhyhorn(level) {
+function Rhyhorn(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function rhyhorn(level) {
     this.setAttacks()
 }
 
-rhyhorn.prototype.setAttacks = function () {
+Rhyhorn.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Horn_Attack())
     }

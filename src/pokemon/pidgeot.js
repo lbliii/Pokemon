@@ -1,4 +1,4 @@
-function pidgeot(level) {
+function Pidgeot(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function pidgeot(level) {
     this.setAttacks()
 }
 
-pidgeot.prototype.setAttacks = function() {
+Pidgeot.prototype.setAttacks = function() {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

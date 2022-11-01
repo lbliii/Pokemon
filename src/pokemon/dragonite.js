@@ -1,4 +1,4 @@
-function dragonite(level) {
+function Dragonite(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,17 +21,17 @@ function dragonite(level) {
     this.setAttacks()
 }
 
-dragonite.prototype.setAttacks = function () {
+Dragonite.prototype.setAttacks = function () {
     if (1 <= this.level) {
-        this.attack1 = new Attack(new DragonRage())
+        this.attack1 = new Attack(new Dragon_Rage())
     }
     if (4 <= this.level) {
-        this.attack2 = new Attack(new DragonRage())
+        this.attack2 = new Attack(new Dragon_Rage())
     }
     if (7 <= this.level) {
-        this.attack3 = new Attack(new DragonRage())
+        this.attack3 = new Attack(new Dragon_Rage())
     }
     if (10 <= this.level) {
-        this.attack4 = new Attack(new DragonRage())
+        this.attack4 = new Attack(new Dragon_Rage())
     }
 }

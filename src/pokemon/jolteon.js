@@ -1,4 +1,4 @@
-function jolteon(level) {
+function Jolteon(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function jolteon(level) {
     this.setAttacks()
 }
 
-jolteon.prototype.setAttacks = function () {
+Jolteon.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

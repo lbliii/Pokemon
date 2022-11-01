@@ -1,4 +1,4 @@
-function growlithe(level) {
+function Growlithe(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function growlithe(level) {
     this.setAttacks()
 }
 
-growlithe.prototype.setAttacks = function () {
+Growlithe.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Ember())
     }

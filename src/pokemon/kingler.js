@@ -1,4 +1,4 @@
-function kinger(level) {
+function Kingler(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,17 +21,17 @@ function kinger(level) {
     this.setAttacks()
 }
 
-kinger.prototype.setAttacks = function () {
+Kingler.prototype.setAttacks = function () {
     if (1 <= this.level) {
-        this.attack1 = new Attack(new Crabhammer())
+        this.attack1 = new Attack(new Crab_Hammer())
     }
     if (4 <= this.level) {
-        this.attack2 = new Attack(new Crabhammer())
+        this.attack2 = new Attack(new Crab_Hammer())
     }
     if (7 <= this.level) {
-        this.attack3 = new Attack(new Crabhammer())
+        this.attack3 = new Attack(new Crab_Hammer())
     }
     if (10 <= this.level) {
-        this.attack4 = new Attack(new Crabhammer())
+        this.attack4 = new Attack(new Crab_Hammer())
     }
 }

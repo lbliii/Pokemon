@@ -1,4 +1,4 @@
-function butterfree(level) {
+function Butterfree(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,12 +21,12 @@ function butterfree(level) {
     this.setAttacks()
 }
 
-butterfree.prototype.setAttacks = function () {
+Butterfree.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Confusion())
     }
     if (4 <= this.level) {
-        this.attack2 = new Attack(new Supersonic())
+        this.attack2 = new Attack(new Super_Sonic())
     }
     if (7 <= this.level) {
         this.attack3 = new Attack(new Psybeam())

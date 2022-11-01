@@ -1,4 +1,4 @@
-function doduo(level){
+function Doduo(level){
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function doduo(level){
     this.setAttacks()
 }
 
-doduo.prototype.setAttacks = function(){
+Doduo.prototype.setAttacks = function(){
     if(1 <= this.level){
         this.attack1 = new Attack(new Peck())
     }

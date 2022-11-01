@@ -1,4 +1,4 @@
-function farfetchd(level) {
+function Farfetchd(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -14,14 +14,14 @@ function farfetchd(level) {
     this.speed = 60
 
     this.img_front = new Image()
-    this.img_front.src = "images/pokemon/farfetch'd-front.png"
+    this.img_front.src = "images/pokemon/farfetchd-front.png"
     this.img_back = new Image()
-    this.img_back.src = "images/pokemon/farfetch'd-back.png"
+    this.img_back.src = "images/pokemon/farfetchd-back.png"
 
     this.setAttacks()
 }
 
-farfetchd.prototype.setAttacks = function () {
+Farfetchd.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Peck())
     }

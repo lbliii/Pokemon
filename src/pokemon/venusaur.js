@@ -1,4 +1,4 @@
-function venusaur(level){ 
+function Venusaur(level){ 
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function venusaur(level){
     this.setAttacks()
 }
 
-venusaur.prototype.setAttacks = function(){
+Venusaur.prototype.setAttacks = function(){
     if(1 <= this.level){
         this.attack1 = new Attack(new Tackle())
     }

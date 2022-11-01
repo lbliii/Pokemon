@@ -1,4 +1,4 @@
-function magmar(level) {
+function Magmar(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function magmar(level) {
     this.setAttacks()
 }
 
-magmar.prototype.setAttacks = function () {
+Magmar.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Ember())
     }

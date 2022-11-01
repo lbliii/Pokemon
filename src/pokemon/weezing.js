@@ -1,4 +1,4 @@
-function weezing(level) {
+function Weezing(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function weezing(level) {
     this.setAttacks()
 }
 
-weezing.prototype.setAttacks = function () {
+Weezing.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

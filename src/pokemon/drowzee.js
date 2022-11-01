@@ -1,4 +1,4 @@
-function drowzee(level) {
+function Drowzee(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function drowzee(level) {
     this.setAttacks()
 }
 
-drowzee.prototype.setAttacks = function () {
+Drowzee.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Confusion())
     }

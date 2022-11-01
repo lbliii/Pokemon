@@ -1,4 +1,4 @@
-function mew(level) {
+function Mew(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function mew(level) {
     this.setAttacks()
 }
 
-mew.prototype.setAttacks = function () {
+Mew.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Psychic())
     }

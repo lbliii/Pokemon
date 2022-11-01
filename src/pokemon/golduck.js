@@ -1,4 +1,4 @@
-function golduck(level) {
+function Golduck(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function golduck(level) {
     this.setAttacks()
 }
 
-golduck.prototype.setAttacks = function () {
+Golduck.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

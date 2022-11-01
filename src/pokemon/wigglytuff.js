@@ -1,4 +1,4 @@
-function wigglytuff(level) {
+function Wigglytuff(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function wigglytuff(level) {
     this.setAttacks()
 }
 
-wigglytuff.prototype.setAttacks = function () {
+Wigglytuff.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Pound())
     }

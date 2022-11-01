@@ -1,4 +1,4 @@
-function seaking(level) {
+function Seaking(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,17 +21,17 @@ function seaking(level) {
     this.setAttacks()
 }
 
-seaking.prototype.setAttacks = function () {
+Seaking.prototype.setAttacks = function () {
     if (1 <= this.level) {
-        this.attack1 = new Attack(new HornAttack())
+        this.attack1 = new Attack(new Horn_Attack())
     }
     if (4 <= this.level) {
-        this.attack2 = new Attack(new HornAttack())
+        this.attack2 = new Attack(new Horn_Attack())
     }
     if (7 <= this.level) {
-        this.attack3 = new Attack(new HornAttack())
+        this.attack3 = new Attack(new Horn_Attack())
     }
     if (10 <= this.level) {
-        this.attack4 = new Attack(new HornAttack())
+        this.attack4 = new Attack(new Horn_Attack())
     }
 }

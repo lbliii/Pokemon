@@ -1,4 +1,4 @@
-function victreebel(level) {
+function Victreebel(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function victreebel(level) {
     this.setAttacks()
 }
 
-victreebel.prototype.setAttacks = function () {
+Victreebel.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Acid())
     }

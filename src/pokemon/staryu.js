@@ -1,4 +1,4 @@
-function staryu(level) {
+function Staryu(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function staryu(level) {
     this.setAttacks()
 }
 
-staryu.prototype.setAttacks = function () {
+Staryu.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

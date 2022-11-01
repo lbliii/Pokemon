@@ -1,4 +1,4 @@
-function porygon(level) {
+function Porygon(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function porygon(level) {
     this.setAttacks()
 }
 
-porygon.prototype.setAttacks = function () {
+Porygon.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

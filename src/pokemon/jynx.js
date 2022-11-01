@@ -1,4 +1,4 @@
-function jynx(level) {
+function Jynx(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function jynx(level) {
     this.setAttacks()
 }
 
-jynx.prototype.setAttacks = function () {
+Jynx.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Pound())
     }

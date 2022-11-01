@@ -1,4 +1,4 @@
-function mrmime(level) {
+function Mrmime(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function mrmime(level) {
     this.setAttacks()
 }
 
-mrmime.prototype.setAttacks = function () {
+Mrmime.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Confusion())
     }

@@ -1,4 +1,4 @@
-function geodude(level) {
+function Geodude(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function geodude(level) {
     this.setAttacks()
 }
 
-geodude.prototype.setAttacks = function () {
+Geodude.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

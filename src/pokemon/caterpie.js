@@ -1,4 +1,4 @@
-function caterpie(level){
+function Caterpie(level){
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function caterpie(level){
     this.setAttacks()
 }
 
-caterpie.prototype.setAttacks = function(){
+Caterpie.prototype.setAttacks = function(){
     if (1 <= this.level){
         this.attack1 = new Attack(new Tackle())
     }

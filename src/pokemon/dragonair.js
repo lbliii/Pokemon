@@ -1,4 +1,4 @@
-function dragonair(level) {
+function Dragonair(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,17 +21,17 @@ function dragonair(level) {
     this.setAttacks()
 }
 
-dragonair.prototype.setAttacks = function () {
+Dragonair.prototype.setAttacks = function () {
     if (1 <= this.level) {
-        this.attack1 = new Attack(new DragonRage())
+        this.attack1 = new Attack(new Dragon_Rage())
     }
     if (4 <= this.level) {
-        this.attack2 = new Attack(new DragonRage())
+        this.attack2 = new Attack(new Dragon_Rage())
     }
     if (7 <= this.level) {
-        this.attack3 = new Attack(new DragonRage())
+        this.attack3 = new Attack(new Dragon_Rage())
     }
     if (10 <= this.level) {
-        this.attack4 = new Attack(new DragonRage())
+        this.attack4 = new Attack(new Dragon_Rage())
     }
 }

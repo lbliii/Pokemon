@@ -1,4 +1,4 @@
-function gastly(level) {
+function Gastly(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function gastly(level) {
     this.setAttacks()
 }
 
-gastly.prototype.setAttacks = function () {
+Gastly.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Lick())
     }

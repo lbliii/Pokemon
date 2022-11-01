@@ -1,4 +1,4 @@
-function poliwag(level) {
+function Poliwag(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function poliwag(level) {
     this.setAttacks()
 }
 
-poliwag.prototype.setAttacks = function () {
+Poliwag.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Bubble())
     }

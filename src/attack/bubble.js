@@ -1,4 +1,4 @@
-function bubble() {
+function Bubble() {
     this.pp = 30;
     this.power = 40;
     this.accuracy = 1;

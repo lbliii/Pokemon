@@ -1,4 +1,4 @@
-function koffing(level) {
+function Koffing(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function koffing(level) {
     this.setAttacks()
 }
 
-koffing.prototype.setAttacks = function () {
+Koffing.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

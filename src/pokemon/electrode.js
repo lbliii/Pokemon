@@ -1,4 +1,4 @@
-function electrode(level) {
+function Electrode(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function electrode(level) {
     this.setAttacks()
 }
 
-electrode.prototype.setAttacks = function () {
+Electrode.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

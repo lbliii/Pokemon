@@ -1,4 +1,4 @@
-function lapras(level) {
+function Lapras(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function lapras(level) {
     this.setAttacks()
 }
 
-lapras.prototype.setAttacks = function () {
+Lapras.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

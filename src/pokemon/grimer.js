@@ -1,4 +1,4 @@
-function grimer(level) {
+function Grimer(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function grimer(level) {
     this.setAttacks()
 }
 
-grimer.prototype.setAttacks = function () {
+Grimer.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

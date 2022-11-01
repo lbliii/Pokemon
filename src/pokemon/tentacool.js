@@ -1,4 +1,4 @@
-function tentacool(level) {
+function Tentacool(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function tentacool(level) {
     this.setAttacks()
 }
 
-tentacool.prototype.setAttacks = function () {
+Tentacool.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

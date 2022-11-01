@@ -1,4 +1,4 @@
-function gloom(level) {
+function Gloom(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function gloom(level) {
     this.setAttacks()
 }
 
-gloom.prototype.setAttacks = function () {
+Gloom.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

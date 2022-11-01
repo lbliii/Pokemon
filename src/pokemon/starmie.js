@@ -1,4 +1,4 @@
-function starmie(level) {
+function Starmie(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,17 +21,17 @@ function starmie(level) {
     this.setAttacks()
 }
 
-starmie.prototype.setAttacks = function () {
+Starmie.prototype.setAttacks = function () {
     if (1 <= this.level) {
-        this.attack1 = new Attack(new WaterGun())
+        this.attack1 = new Attack(new Water_Gun())
     }
     if (4 <= this.level) {
-        this.attack2 = new Attack(new WaterGun())
+        this.attack2 = new Attack(new Water_Gun())
     }
     if (7 <= this.level) {
-        this.attack3 = new Attack(new WaterGun())
+        this.attack3 = new Attack(new Water_Gun())
     }
     if (10 <= this.level) {
-        this.attack4 = new Attack(new WaterGun())
+        this.attack4 = new Attack(new Water_Gun())
     }
 }

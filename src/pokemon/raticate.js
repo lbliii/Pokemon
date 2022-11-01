@@ -1,4 +1,4 @@
-function raticate(level){
+function Raticate(level){
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function raticate(level){
     this.setAttacks()
 }
 
-raticate.prototype.setAttacks = function(){
+Raticate.prototype.setAttacks = function(){
     if (1 <= this.level){
         this.attack1 = new Attack(new Tackle())
     }

@@ -1,4 +1,4 @@
-function pikachu(level) {
+function Pikachu(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function pikachu(level) {
     this.setAttacks()
 }
 
-pikachu.prototype.setAttacks = function () {
+Pikachu.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Thunder_Shock())
     }

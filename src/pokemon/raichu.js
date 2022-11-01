@@ -1,4 +1,4 @@
-function raichu(level) {
+function Raichu(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function raichu(level) {
     this.setAttacks()
 }
 
-raichu.prototype.setAttacks = function () {
+Raichu.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Thunder_Shock())
     }

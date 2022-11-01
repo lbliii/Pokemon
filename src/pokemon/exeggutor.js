@@ -1,4 +1,4 @@
-function exegguctor(level) {
+function Exeggutor(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function exegguctor(level) {
     this.setAttacks()
 }
 
-exegguctor.prototype.setAttacks = function () {
+Exeggutor.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

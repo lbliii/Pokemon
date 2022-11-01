@@ -1,4 +1,4 @@
-function persian(level) {
+function Persian(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function persian(level) {
     this.setAttacks()
 }
 
-persian.prototype.setAttacks = function () {
+Persian.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

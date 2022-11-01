@@ -1,4 +1,4 @@
-function cubone(level) {
+function Cubone(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function cubone(level) {
     this.setAttacks()
 }
 
-cubone.prototype.setAttacks = function () {
+Cubone.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

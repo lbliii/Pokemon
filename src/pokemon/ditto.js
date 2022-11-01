@@ -1,4 +1,4 @@
-function ditto(level) {
+function Ditto(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function ditto(level) {
     this.setAttacks()
 }
 
-ditto.prototype.setAttacks = function () {
+Ditto.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Transform())
     }

@@ -1,4 +1,4 @@
-function alakazam(level) {
+function Alakazam(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function alakazam(level) {
     this.setAttacks()
 }
 
-alakazam.prototype.setAttacks = function () {
+Alakazam.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Confusion())
     }

@@ -1,4 +1,4 @@
-function nidoqueen(level) {
+function Nidoqueen(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function nidoqueen(level) {
     this.setAttacks()
 }
 
-nidoqueen.prototype.setAttacks = function () {
+Nidoqueen.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

@@ -1,4 +1,4 @@
-function ivysaur(level){
+function Ivysaur(level){
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function ivysaur(level){
     this.setAttacks()
 }
 
-ivysaur.prototype.setAttacks = function(){
+Ivysaur.prototype.setAttacks = function(){
     if(1 <= this.level){
         this.attack1 = new Attack(new Tackle())
     }

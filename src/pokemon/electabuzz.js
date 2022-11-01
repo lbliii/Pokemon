@@ -1,4 +1,4 @@
-function electabuzz(level) {
+function Electabuzz(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,17 +21,17 @@ function electabuzz(level) {
     this.setAttacks()
 }
 
-electabuzz.prototype.setAttacks = function () {
+Electabuzz.prototype.setAttacks = function () {
     if (1 <= this.level) {
-        this.attack1 = new Attack(new QuickAttack())
+        this.attack1 = new Attack(new Quick_Attack())
     }
     if (4 <= this.level) {
-        this.attack2 = new Attack(new QuickAttack())
+        this.attack2 = new Attack(new Quick_Attack())
     }
     if (7 <= this.level) {
-        this.attack3 = new Attack(new QuickAttack())
+        this.attack3 = new Attack(new Quick_Attack())
     }
     if (10 <= this.level) {
-        this.attack4 = new Attack(new QuickAttack())
+        this.attack4 = new Attack(new Quick_Attack())
     }
 }

@@ -1,4 +1,4 @@
-function abra(level) {
+function Abra(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function abra(level) {
     this.setAttacks()
 }
 
-abra.prototype.setAttacks = function () {
+Abra.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

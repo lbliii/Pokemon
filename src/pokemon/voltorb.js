@@ -1,4 +1,4 @@
-function voltorb(level) {
+function Voltorb(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function voltorb(level) {
     this.setAttacks()
 }
 
-voltorb.prototype.setAttacks = function () {
+Voltorb.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

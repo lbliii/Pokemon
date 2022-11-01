@@ -1,4 +1,4 @@
-function hitmonchan(level) {
+function Hitmonchan(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,17 +21,17 @@ function hitmonchan(level) {
     this.setAttacks()
 }
 
-hitmonchan.prototype.setAttacks = function () {
+Hitmonchan.prototype.setAttacks = function () {
     if (1 <= this.level) {
-        this.attack1 = new Attack(new CometPunch())
+        this.attack1 = new Attack(new Comet_Punch())
     }
     if (4 <= this.level) {
-        this.attack2 = new Attack(new CometPunch())
+        this.attack2 = new Attack(new Comet_Punch())
     }
     if (7 <= this.level) {
-        this.attack3 = new Attack(new CometPunch())
+        this.attack3 = new Attack(new Comet_Punch())
     }
     if (10 <= this.level) {
-        this.attack4 = new Attack(new CometPunch())
+        this.attack4 = new Attack(new Comet_Punch())
     }
 }

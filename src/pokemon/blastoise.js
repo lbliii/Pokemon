@@ -1,4 +1,4 @@
-function blastoise(level) {
+function Blastoise(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function blastoise(level) {
     this.setAttacks()
 }
 
-blastoise.prototype.setAttacks = function () {
+Blastoise.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

@@ -1,4 +1,4 @@
-function metapod(level) {
+function Metapod(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function metapod(level) {
     this.setAttacks()
 }
 
-metapod.prototype.setAttacks = function () {
+Metapod.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Harden())
     }

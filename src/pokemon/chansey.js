@@ -1,4 +1,4 @@
-function chansey(level) {
+function Chansey(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function chansey(level) {
     this.setAttacks()
 }
 
-chansey.prototype.setAttacks = function () {
+Chansey.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Pound())
     }

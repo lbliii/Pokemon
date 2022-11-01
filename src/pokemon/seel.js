@@ -1,4 +1,4 @@
-function seel(level) {
+function Seel(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function seel(level) {
     this.setAttacks()
 }
 
-seel.prototype.setAttacks = function () {
+Seel.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

@@ -1,4 +1,4 @@
-function krabby(level) {
+function Krabby(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function krabby(level) {
     this.setAttacks()
 }
 
-krabby.prototype.setAttacks = function () {
+Krabby.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Bubble())
     }

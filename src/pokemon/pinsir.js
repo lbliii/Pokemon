@@ -1,4 +1,4 @@
-function pinsir(level) {
+function Pinsir(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function pinsir(level) {
     this.setAttacks()
 }
 
-pinsir.prototype.setAttacks = function () {
+Pinsir.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

@@ -1,4 +1,4 @@
-function beedrill(level){
+function Beedrill(level){
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function beedrill(level){
     this.setAttacks()
 }
 
-beedrill.prototype.setAttacks = function(){
+Beedrill.prototype.setAttacks = function(){
     if (1 <= this.level){
         this.attack1 = new Attack(new Poison_Sting())
     }

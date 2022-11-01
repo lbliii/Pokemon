@@ -1,4 +1,4 @@
-function tauros(level) {
+function Tauros(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function tauros(level) {
     this.setAttacks()
 }
 
-tauros.prototype.setAttacks = function () {
+Tauros.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

@@ -1,4 +1,4 @@
-function arbok(level){
+function Arbok(level){
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function arbok(level){
     this.setAttacks()
 }
 
-arbok.prototype.setAttacks = function(){
+Arbok.prototype.setAttacks = function(){
     if(1 <= this.level){
         this.attack1 = new Attack(new Bite())
     }

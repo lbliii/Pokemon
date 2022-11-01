@@ -1,4 +1,4 @@
-function dratini(level) {
+function Dratini(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function dratini(level) {
     this.setAttacks()
 }
 
-dratini.prototype.setAttacks = function () {
+Dratini.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Wrap())
     }

@@ -1,4 +1,4 @@
-function dewgong(level){
+function Dewgong(level){
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,17 +21,17 @@ function dewgong(level){
     this.setAttacks()
 }
 
-dewgong.prototype.setAttacks = function(){
+Dewgong.prototype.setAttacks = function(){
     if (1 <= this.level){
-        this.attack1 = new Attack(new IceBeam())
+        this.attack1 = new Attack(new Ice_Beam())
     }
     if (4 <= this.level){
-        this.attack2 = new Attack(new IceBeam())
+        this.attack2 = new Attack(new Ice_Beam())
     }
     if (7 <= this.level){
-        this.attack3 = new Attack(new IceBeam())
+        this.attack3 = new Attack(new Ice_Beam())
     }
     if (10 <= this.level){
-        this.attack4 = new Attack(new IceBeam())
+        this.attack4 = new Attack(new Ice_Beam())
     }
 }

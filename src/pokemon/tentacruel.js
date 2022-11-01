@@ -1,4 +1,4 @@
-function tentacruel(level) {
+function Tentacruel(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function tentacruel(level) {
     this.setAttacks()
 }
 
-tentacruel.prototype.setAttacks = function () {
+Tentacruel.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Acid())
     }

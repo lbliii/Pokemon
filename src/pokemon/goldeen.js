@@ -1,4 +1,4 @@
-function goldeen(level) {
+function Goldeen(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function goldeen(level) {
     this.setAttacks()
 }
 
-goldeen.prototype.setAttacks = function () {
+Goldeen.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

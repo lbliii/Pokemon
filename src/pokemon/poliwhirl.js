@@ -1,4 +1,4 @@
-function poliwhirl(level) {
+function Poliwhirl(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function poliwhirl(level) {
     this.setAttacks()
 }
 
-poliwhirl.prototype.setAttacks = function () {
+Poliwhirl.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Bubble())
     }

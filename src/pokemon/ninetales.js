@@ -1,4 +1,4 @@
-function ninetales(level) {
+function Ninetales(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function ninetales(level) {
     this.setAttacks()
 }
 
-ninetales.prototype.setAttacks = function () {
+Ninetales.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

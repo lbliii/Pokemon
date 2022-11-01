@@ -1,4 +1,4 @@
-function moltres(level) {
+function Moltres(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,17 +21,17 @@ function moltres(level) {
     this.setAttacks()
 }
 
-moltres.prototype.setAttacks = function () {
+Moltres.prototype.setAttacks = function () {
     if (1 <= this.level) {
-        this.attack1 = new Attack(new FireBlast())
+        this.attack1 = new Attack(new Fire_Blast())
     }
     if (4 <= this.level) {
-        this.attack2 = new Attack(new FireBlast())
+        this.attack2 = new Attack(new Fire_Blast())
     }
     if (7 <= this.level) {
-        this.attack3 = new Attack(new FireBlast())
+        this.attack3 = new Attack(new Fire_Blast())
     }
     if (10 <= this.level) {
-        this.attack4 = new Attack(new FireBlast())
+        this.attack4 = new Attack(new Fire_Blast())
     }
 }

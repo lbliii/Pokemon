@@ -1,4 +1,4 @@
-function kabuto(level) {
+function Kabuto(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -21,7 +21,7 @@ function kabuto(level) {
     this.setAttacks()
 }
 
-kabuto.prototype.setAttacks = function () {
+Kabuto.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Scratch())
     }

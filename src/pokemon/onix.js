@@ -1,4 +1,4 @@
-function onyx(level) {
+function Onix(level) {
     this.level = level
     this.maxHealth = level * 2 + 5
     this.attack1
@@ -14,14 +14,14 @@ function onyx(level) {
     this.speed = 70
 
     this.img_front = new Image()
-    this.img_front.src = "images/pokemon/onyx-front.png"
+    this.img_front.src = "images/pokemon/onix-front.png"
     this.img_back = new Image()
-    this.img_back.src = "images/pokemon/onyx-back.png"
+    this.img_back.src = "images/pokemon/onix-back.png"
 
     this.setAttacks()
 }
 
-onyx.prototype.setAttacks = function () {
+Onix.prototype.setAttacks = function () {
     if (1 <= this.level) {
         this.attack1 = new Attack(new Tackle())
     }

@@ -1,4 +1,4 @@
-function bonemerang() {
+function Bonemerang() {
     this.pp = 10;
     this.power = 50;
     this.accuracy = 0.9;
